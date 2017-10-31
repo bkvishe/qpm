@@ -6,19 +6,19 @@ class Login extends CI_Controller {
 	public function __construct(){
 
 		parent::__construct();
-		$this->load->model('mLogin');
-		//$this->lang->load('messages','hindi');
+		$this->load->model('MLogin');
 	}
-	public function index()
-	{
+
+	public function index(){
+
 		$this->load->view('login/index');
 	}
 
 	public function loginAction(){
 
-		if(!empty($_POST)){
+		if(!empty($this->input->post())){
 
-			$result = $this->mLogin->checkLogin();
+			$result = $this->MLogin->checkLogin();
 			echo json_encode($result);
 		}
 		else{
@@ -28,5 +28,11 @@ class Login extends CI_Controller {
 					'msg' => 'Bad request! Please try ones again.'
 				]);
 		}
+	}
+
+	public function logout(){
+		
+		$this->session->sess_destroy();
+		redirect(base_url('index.php/Login/index'));
 	}
 }

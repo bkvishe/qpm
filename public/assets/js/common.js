@@ -19,3 +19,8 @@ function defaultError(id='alertMsg'){
 
 	$("#"+id).html(html);
 }
+
+function show_dashboard(){
+
+	location.reload();
+}

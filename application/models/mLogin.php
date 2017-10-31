@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class mLogin extends CI_Model {
+class MLogin extends CI_Model {
 
 	public function checkLogin(){
 		$count = $this->db->where(['user_name' => $_POST['user_name']])

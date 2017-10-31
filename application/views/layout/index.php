@@ -1,7 +1,7 @@
-<?php
-	$this->load->view('layout/header');
+<?php $this->load->view('layout/header'); ?>
 
-	echo isset($contains)?$contains:"";
-
-	$this->load->view('layout/footer');
-?>
+	<div id="main-wrapper">
+		<?php echo isset($contains)?$contains:""; ?>
+	</div>
+	
+<?php $this->load->view('layout/footer'); ?>
