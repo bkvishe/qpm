@@ -34,7 +34,7 @@
                   <?php foreach($record as $value):?>
                     <tr>
                         <td><?php echo $value['fullname']?></td>
-                        <td><i onClick="customer_update(<?php echo $value['cust_id']?>);" class="fa fa-info-o" aria-hidden="true"></i></td>
+                        <td><button type="button" onClick="customer_details(<?php echo $value['cust_id']?>);" class="btn btn-danger" >Details</button></td>
                         <td><i onClick="trans_form(<?php echo $value['cust_id']?>);" class="fa fa-share" aria-hidden="true"></i></td>
                     </tr>
                   <?php endforeach;?>

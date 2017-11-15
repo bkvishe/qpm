@@ -42,7 +42,7 @@ class MCustomer extends CI_Model {
 
 	public function getSingleCustomer(){
 
-		return $this->db->get_where('customer', ['cust_id' => $this->input->post('cust_id')])->result_array()[0];
+		return $this->db->get_where('customer', ['cust_id' => $this->input->post('cust_id')])->row_array();
 	}
 
 	public function update_action(){
@@ -89,10 +89,10 @@ class MCustomer extends CI_Model {
 
 	public function delete_action(){
 
-		$record = $this->input->post();
-		if($record['cust_id'] != ''){
+		
+		if($this->input->post('cust_id') != ''){
 
-			if($this->db->delete('customer', ['cust_id' => $record['cust_id']])){
+			if($this->db->delete('customer', ['cust_id' => $this->input->post('cust_id')])){
 
 				return json_encode([
 					'status' => 1,
@@ -115,6 +115,20 @@ class MCustomer extends CI_Model {
 					'msg' => 'Invalid Request! Please try once again',
 					'type' => 'error',
 				]);
+		}
+	}
+
+	public function getCustomerTrans(){
+
+		if($this->input->post('cust_id') != ''){
+
+			$this->db->order_by('trans_id desc');
+			return $this->db->get_where('transaction', [
+				'cust_id' => $this->input->post('cust_id')
+			])->result_array();
+		}
+		else{
+			return false;
 		}
 	}
 }

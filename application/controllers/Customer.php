@@ -84,4 +84,24 @@ class Customer extends CI_Controller {
 			]);
 		}	
 	}
+
+	public function get_details(){
+
+		if(!empty($this->input->post())){
+
+			$customer = $this->MCustomer->getSingleCustomer();
+			$transactions = $this->MCustomer->getCustomerTrans();
+
+			echo json_encode([
+				'data' => compact('customer', 'transactions'),
+				'status' => 1
+			]);
+		}
+		else{
+			echo json_encode([
+				'data' => '',
+				'status' => 0
+			]);
+		}
+	}
 }

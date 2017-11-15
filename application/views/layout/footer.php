@@ -10,7 +10,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" onClick="show_dashboard();">Close</button>
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal" onClick="">Close</button>
       </div>
     </div>
     <!-- /.modal-content -->
