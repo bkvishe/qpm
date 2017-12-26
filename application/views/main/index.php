@@ -15,12 +15,12 @@
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
+
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3><?php echo isset($total_customer)?$total_customer:0?></h3>
+              <h3><?php //echo isset($total_customer)?$total_customer:0?>1100</h3>
 
-              <p>Total Customers</p>
+              <p>Total Questions</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
@@ -28,14 +28,14 @@
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
+
         <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
+
           <div class="small-box bg-green">
             <div class="inner">
-              <h3><?php echo isset($total_trans)?$total_trans:0?></h3>
+              <h3><?php //echo isset($total_trans)?$total_trans:0?>100</h3>
 
-              <p>Total Transactions</p>
+              <p>Total Paper Generated</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
@@ -43,7 +43,7 @@
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
+
       </div>
       <!-- /.row -->
       <!-- Main row -->

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>QPM 1.0  | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,7 +30,7 @@
 
   <!-- Data Tables -->
   <link rel="stylesheet" href="<?php echo assets('theme')?>bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  
+
 
   <!-- custom css -->
   <link rel="stylesheet" href="<?php echo assets('css')?>custom.css">
@@ -53,11 +53,11 @@
   <image src="<?php echo assets('images')?>loader.gif" id="loader"/>
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="#" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>C</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>Cable</span>
+      <span class="logo-lg"><b>Admin</b>QPM</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -121,8 +121,8 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="javascript:show_dashboard();"><i class="fa fa-circle-o"></i>Dashboard</a></li>
-            <li class="active"><a href="javascript:customer_list();"><i class="fa fa-circle-o"></i>Customers</a></li>
-            <li><a href="javascript:transaction_list();"><i class="fa fa-circle-o"></i>Transactions</a></li>
+            <li class="active"><a href="javascript:void();"><i class="fa fa-circle-o"></i>Question Master</a></li>
+
           </ul>
         </li>
       </ul>

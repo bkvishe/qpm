@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Customer Management 1.0 | Log in</title>
+  <title>Question Paper Management 1.0 | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -34,7 +34,7 @@
 
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Customer</b>Management</a>
+    <a href="#"><b>QuestionPaper</b>Management</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -59,7 +59,7 @@
       </div>
     </form>
   </div>
-  
+
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
@@ -91,7 +91,7 @@
     		dataType:'json',
     		data:formData,
     		success:function(resp){
-    			
+
     			if(resp.length != 0){
     				if(resp['flag'] == '1'){
     					window.location.href = base_url+'index.php/Main/index';
